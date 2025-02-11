@@ -46,10 +46,10 @@ defmodule Instream.MixProject do
       {:dialyxir, "~> 1.4", only: :dev, runtime: false},
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
       {:excoveralls, "~> 0.16.0", only: :test, runtime: false},
-      {:hackney, "~> 1.1"},
+      {:hackney, "~> 1.1", optional: true},
       {:influxql, "~> 0.2.0"},
-      {:jason, "~> 1.0"},
-      {:mox, "~> 1.0", only: :test},
+      {:jason, "~> 1.4"},
+      {:mox, "~> 1.2", only: :test},
       {:nimble_csv, "~> 1.0"},
       {:poolboy, "~> 1.5"},
       {:ranch, "~> 1.7.0", only: :test}
